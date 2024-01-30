@@ -1,0 +1,45 @@
+@import "normalize.css";
+
+:root {
+    width:100vw;
+    height:100vh;
+    font-family: sans-serif; 
+    background-image: url("images/form-fill.jpg");
+    background-size: contain;
+}
+
+body, body>*, .account {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    flex-direction: row;
+    width:clamp()
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.backdrop {
+    justify-content: flex-end;
+    color: white;
+}
+
+.logo {
+    font-family: Norse-Bold, sans-serif;
+}
+
+.content {
+    background-color: white;
+}
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url(fonts/Norse-Bold.otf) format('opentype');
+}

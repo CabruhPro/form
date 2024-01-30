@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="backdrop">
+        <div class="logo">
+            <img src="images/odin-lined.png" 
+            alt="odin-lined.png" width="150px">
+            ODIN
+        </div>
+        <footer>Photo by Anon</footer>
+    </div>
+    <div class="content">
+        <div class="memo">
+            This is not a real service. You know you need something like
+            this in your life. Realize your hopeless dreams.<br>
+            Sign up now.<br>
+            <br>
+            You <i>know</i> you want to.
+        </div>
+        <form id="signup" action="">
+            <fieldset>
+                <legend>Let's do this!</legend>
+                <ul>
+                    <li><label for="first">First Name</label><input type="text" id="first"></li>
+                    <li><label for="last">Last Name</label><input type="text" id="last"></li>
+                    <li><label for="mail">Email</label><input type="text" id="mail"></li>
+                    <li><label for="phone">Phone Number</label><input type="text" id="phone"></li>
+                    <li><label for="pass">Password</label><input type="text" id="pass"></li>
+                    <li><label for="conf">Confirm Password</label><input type="text" id="conf"></li>
+                </ul>
+            </fieldset>
+        </form>
+        <div class="account">
+            <button type="submit" form="signup">Create Account</button>
+            Already have an account? <a href="">Log in</a>
+        </div>
+    </div>
+</body>
+</html>
