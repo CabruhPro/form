@@ -5,17 +5,25 @@
     height:100vh;
     font-family: sans-serif; 
     background-image: url("images/form-fill.jpg");
-    background-size: contain;
+    background-size: cover;
+    font-size:medium;
+    --clickable-color:#596D48;
 }
 
-body, body>*, .account {
+body, body>*, li, .account, .logo {
     display: flex;
     flex-direction: column;
 }
 
 body {
     flex-direction: row;
-    width:clamp()
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    font-size: smaller;
 }
 
 ul {
@@ -25,18 +33,86 @@ ul {
     display: flex;
     flex-flow: row wrap;
 }
+li {
+    margin-top: 1.5em;
+    gap:0.2em
+}
+li:nth-child(odd) {
+    margin-right: 5em;
+}
+label {
+    font-size: 60%;
+}
+input {
+    width:12em;
+}
+
+button {
+    background-color: var(--clickable-color);
+    width: 10em; 
+    height: 2.5em;
+    margin:1em;
+    color:white;
+    border: 2px solid #596D48;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+a {
+    color:var(--clickable-color);
+    font-weight: bolder;
+    text-decoration: none;
+}
+fieldset {
+    padding:1em;
+    border-width: 0;
+    box-shadow: 0 0.5em 0.5em 0 rgba(0,0,0,0.1);
+    margin:0;
+    background-color: white;
+}
+input {
+    outline:none;
+    border: 1px solid lightgray;
+    border-radius: 0.2em;
+    padding: 0.1em 0.2em;
+}
+input:focus{
+    box-shadow: 0.2em 0.2em 0.5em 0 rgba(0,0,0,0.4);
+    border-color: blue;
+}
 
 .backdrop {
     justify-content: flex-end;
+    gap: 60%;
     color: white;
+    min-width: 20em;
+    width:40%;
 }
 
 .logo {
     font-family: Norse-Bold, sans-serif;
+    background-color: black;
+    opacity: 30%;
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 500%;
 }
 
 .content {
-    background-color: white;
+    background-color: whitesmoke;
+    justify-content: center;
+    min-width: 35em;;
+    width:60%;
+}
+.content>*:nth-child(odd) {
+    padding: 0 1.5em;
+}
+
+
+#odinimg {
+    width:max(80px, 20%);
 }
 
 @font-face {
